@@ -1,9 +1,7 @@
+const items = document.querySelectorAll('li');
 
-
-const title = document.querySelector('h1');
-title.style.margin = '50px';
-title.style.color = 'teal';
-title.style.fontSize = '60px';
-
-alert('Apparently, there is nothing that cannot happen today.  -- Mark Twain');
-
+items.forEach(item => {
+  item.addEventListener('click', (e) => {
+    e.target.style.textDecoration = 'line-through';
+  });
+});  
