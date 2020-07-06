@@ -46,7 +46,7 @@ button {
   display: none;
 }
 
-.popup{
+.popup {
   font-family: Verdana;
   text-align: center;
   width: 100%;
@@ -57,18 +57,48 @@ button {
   position: relative;
 }
 
-.popup a{
+.popup a {
   background: yellow;
   color: teal;
   text-decoration: none;
   padding: 6px 10px;
 }
 
-.popup-close{
+.popup-close {
   position: absolute;
   top: 5px;
   right: 8px;
   cursor: pointer;
+}
+
+//--------------------------------------------------
+
+body {
+    background: #352f5b;  //purple
+}
+
+.container {
+    max-width: 400px;
+}
+
+input[type=text],
+input[type=text]:focus {
+    color: #fff;
+    border: none;
+    background: rgba(0,0,0,0.2);
+    max-width: 400px;
+}
+
+.todos li {
+    background: #423a6f;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.filtered {
+    display: none !important;  
 }
 
 
