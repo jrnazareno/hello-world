@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-
+<script src="https://kit.fontawesome.com/cee4c2441e.js" crossorigin="anonymous"></script>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script src="https://kit.fontawesome.com/cee4c2441e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <title>Jojo's World</title>
   <LINK href="styles.css" rel="stylesheet" type="text/css">
@@ -11,9 +12,9 @@
 </head>
   
 <body>
-  
+
+<!--   
   <div class="card" style="width: 18rem;">
-    <!-- <img src="..." class="card-img-top" alt="..."> -->
     <img src="https://octodex.github.com/images/mummytocat.gif" class="card-img-top" alt="..."/>
     <div class="card-body">
       <h5 class="card-title">World 1</h5>
@@ -22,11 +23,8 @@
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
-  
   <button>Life Support</button>
-
   <div class="popup-wrapper">
-
     <div class="popup">
       <div class="popup-close">x</div>
       <div class="popup-content">
@@ -41,12 +39,46 @@
           </ul>
         <a href="#">Add Item</a>
       </div>
-
     </div>
+  </div>
+ -->
+  
+//---------------------------------------------------------------------
+  <div class="container">
+
+    <header class="text-center text-light my-4">
+      <h1 class="mb-4">Todo List</h1>
+      <form class="search">
+        <input class="form-control m-auto" type="text" name="search" placeholder="search todos" />
+      </form>
+    </header>    
+
+    <ul class="list-group todos mx-auto text-light">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>play codm</span>
+        <i class="far fa-trash-alt delete"></i>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>defeat ganon in zelda</span>
+        <i class="far fa-trash-alt delete"></i>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>make a cassava pie</span>
+        <i class="far fa-trash-alt delete"></i>
+      </li>
+    </ul>
+
+    <form class="add text-center my-4">
+      <label class="text-light">Add a new todo...</label>
+      <input class="form-control m-auto" type="text" name="add" />
+    </form>
 
   </div>
 
-  <script src="popup.js"></script>
+  <script src="app.js"></script>
+</body>  
+  
+  <script src="app.js"></script>
   
 </body>
 </html>
